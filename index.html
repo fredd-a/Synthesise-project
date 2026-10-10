@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Hub | Ashesi University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Course Hub</h1>
+        <p>Revision material for every course, organised by week</p>
+    </header>
+
+    <main>
+        <section id="list-view">
+        <div class="controls">
+            <input type="search" id="search" placeholder="Search by course code or title...">
+            <div class="filters">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="taken">Taken</button>
+            <button data-filter="current">Currently taking</button>
+            <button data-filter="upcoming">Yet to take</button>
+            </div>
+        </div>
+        <div class="grid" id="grid"></div>
+        </section>
+
+        <section id="detail-view" class="hidden">
+        <button class="back" id="back">← Back to all courses</button>
+        <div id="detail"></div>
+        </section>
+    </main>
+    
+    <script src="courses.js"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
